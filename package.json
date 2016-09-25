@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "author": "katashin",
   "private": true,
-  "description": "A project template for an ES6 library",
+  "description": "Boilerplate for standalone Vue.js components",
   "keywords": [
-    "template",
-    "ECMAScript"
+    "component",
+    "Vue.js"
   ],
   "license": "MIT",
   "main": "dist/template-vue-component.cjs.js",
