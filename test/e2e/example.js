@@ -7,7 +7,7 @@ describe('Example', () => {
 
   before(browser.beforeHook())
 
-  before('load example page', () => {
+  beforeEach('load example page', () => {
     browser.navigateTo('/')
     browser.assert.httpStatus(200)
     page = new ExamplePage(browser)
@@ -22,6 +22,6 @@ describe('Example', () => {
   })
 
   it('decrements', () => {
-    assert(page.decrement().counterText === '0')
+    assert(page.decrement().counterText === '-1')
   })
 })
