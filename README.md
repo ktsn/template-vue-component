@@ -1,5 +1,7 @@
 # template-vue-component
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ktsn/template-vue-component.svg)](https://greenkeeper.io/)
+
 Boilerplate for standalone Vue.js components
 
 ## Usage
