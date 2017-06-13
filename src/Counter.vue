@@ -10,6 +10,8 @@
 
 <script>
 export default {
+  name: 'counter',
+
   props: {
     value: Number
   },

@@ -3,6 +3,3 @@ node_modules/
 
 /dist/
 /.tmp/
-/test/log/*
-
-/example/__build__.js
