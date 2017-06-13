@@ -20,7 +20,7 @@
     "url": "https://github.com/ktsn/template-vue-component.git"
   },
   "scripts": {
-    "prepublish": "npm run release",
+    "prepublishOnly": "npm run release",
     "clean": "rm -rf dist .tmp",
     "start": "webpack-dev-server --config scripts/webpack.config.example.js",
     "dev": "webpack-dev-server --hot --no-info --config scripts/webpack.config.example.js",
