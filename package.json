@@ -58,6 +58,7 @@
     "eslint-plugin-html": "^3.0.0",
     "flow-bin": "^0.47.0",
     "glob": "^7.1.2",
+    "mocha": "^3.4.2",
     "npm-run-all": "^4.0.2",
     "power-assert": "^1.4.4",
     "rollup": "^0.42.0",
