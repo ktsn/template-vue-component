@@ -51,6 +51,7 @@
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
     "eslint": "^4.0.0",
+    "eslint-config-ktsn": "^1.0.2",
     "eslint-plugin-html": "^3.0.0",
     "glob": "^7.1.2",
     "mocha": "^3.4.2",
