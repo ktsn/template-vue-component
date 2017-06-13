@@ -1,5 +1,4 @@
 const path = require('path')
-const DashboardPlugin = require('webpack-dashboard/plugin')
 
 module.exports = {
   context: path.resolve(__dirname, '../example'),
@@ -18,9 +17,6 @@ module.exports = {
       { test: /\.vue$/, loader: 'vue-loader' }
     ]
   },
-  plugins: [
-    new DashboardPlugin()
-  ],
   devtool: 'source-map',
   devServer: {
     contentBase: path.resolve(__dirname, '../example')
