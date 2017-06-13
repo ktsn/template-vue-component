@@ -1,7 +1,10 @@
-// @flow
+import Counter from './Counter.vue'
 
-export { default as default } from './Counter.vue'
+export default function install(Vue) {
+  Vue.component('counter', Counter)
+}
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Only print on development mode')
+/* global window */
+if (typeof window !== 'undefined' && typeof window.Vue === 'function') {
+  window.Vue.use(install)
 }

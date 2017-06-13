@@ -3,7 +3,6 @@
   parser: babel-eslint
   plugins:
     - html
-    - flowtype
   env:
     es6: true
     node: true
@@ -26,5 +25,3 @@
     quotes: [1, single]
     semi: [1, never]
     strict: [2, global]
-    flowtype/define-flow-type: 1
-    flowtype/use-flow-type: 1
