@@ -2,7 +2,8 @@ const path = require('path')
 const glob = require('glob')
 
 module.exports = {
-  entry: glob.sync(path.resolve(__dirname, '../test/unit/**/*.js')),
+  entry: [path.resolve(__dirname, '../test/unit/setup.js')]
+    .concat(glob.sync(path.resolve(__dirname, '../test/unit/**/*.spec.js'))),
   output: {
     path: path.resolve(__dirname, '../.tmp'),
     filename: 'test.js'
