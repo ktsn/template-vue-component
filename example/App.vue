@@ -5,16 +5,11 @@
 </template>
 
 <script>
-import Counter from '../src/index'
-
 export default {
   data () {
     return {
       count: 0
     }
-  },
-  components: {
-    Counter
   }
 }
 </script>
