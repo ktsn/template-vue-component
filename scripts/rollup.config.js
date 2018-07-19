@@ -19,7 +19,7 @@ const config = {
  * ${meta.homepage}
  *
  * @license
- * Copyright (c) 2017 ${meta.author}
+ * Copyright (c) 2018 ${meta.author}
  * Released under the MIT license
  * ${meta.homepage}/blob/master/LICENSE
  */`
