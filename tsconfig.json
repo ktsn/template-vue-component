@@ -8,10 +8,16 @@
       "dom"
     ],
     "strict": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "test/**/*.ts",
+    "test/**/*.vue"
   ]
 }
