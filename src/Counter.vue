@@ -8,8 +8,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { VueConstructor } from 'vue'
+
+export default Vue.extend({
   name: 'counter',
 
   props: {
@@ -17,15 +19,15 @@ export default {
   },
 
   methods: {
-    increment () {
+    increment(): void {
       this.$emit('increment')
     },
 
-    decrement () {
+    decrement(): void {
       this.$emit('decrement')
     }
   }
-}
+})
 </script>
 
 <style>

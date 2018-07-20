@@ -1,5 +1,2 @@
 ---
   extends: eslint-config-ktsn
-  parser: babel-eslint
-  plugins:
-    - html

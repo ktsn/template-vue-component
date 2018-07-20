@@ -1,10 +1,13 @@
+import _Vue from 'vue'
 import Counter from './Counter.vue'
 
-export default function install(Vue) {
+export { Counter }
+
+export default function install(Vue: typeof _Vue): void {
   Vue.component('counter', Counter)
 }
 
-/* global window */
+declare const window: any
 if (typeof window !== 'undefined' && typeof window.Vue === 'function') {
   window.Vue.use(install)
 }

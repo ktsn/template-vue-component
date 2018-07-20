@@ -3,3 +3,4 @@ node_modules/
 
 /dist/
 /.tmp/
+/.rpt2_cache/
