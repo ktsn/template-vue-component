@@ -2,5 +2,6 @@ node_modules/
 *.log*
 
 /dist/
+/dist-play/
 /.tmp/
 /.rpt2_cache/

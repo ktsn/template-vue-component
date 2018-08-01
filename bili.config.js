@@ -37,7 +37,7 @@ module.exports = {
   },
 
   typescript2: {
-    tsconfig: './tsconfig.json',
+    tsconfig: './tsconfig.main.json',
     clean: true,
     typescript: require('typescript')
   },
