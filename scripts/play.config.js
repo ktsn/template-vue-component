@@ -1,14 +1,10 @@
 module.exports = {
   entry: {
     app: 'play/app.js',
-    preview: [':hot:', 'play/preview.js']
+    preview: 'play/preview.js'
   },
-  dist: 'dist-play',
+  outDir: 'dist-play',
   port: 5000,
-  // compile Vue template
-  templateCompiler: true,
-  // no code split for 3rd party libraries
-  vendor: false,
   html: [
     {
       chunks: ['app'],
@@ -18,5 +14,23 @@ module.exports = {
       chunks: ['preview'],
       filename: 'preview.html'
     }
-  ]
+  ],
+
+  vue: {
+    fullBuild: true
+  },
+
+  chainWebpack: config => {
+    // prettier-ignore
+    config.module
+      .rule('ts')
+      .test(/\.ts$/)
+      .use('ts-loader')
+        .loader('ts-loader')
+        .options({
+          appendTsSuffixTo: [/\.vue$/]
+        })
+
+    config.optimization.splitChunks(false)
+  }
 }
