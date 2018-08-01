@@ -4,12 +4,12 @@ Boilerplate for standalone Vue.js components
 
 ## Usage
 
-Just clone this repository and edit `package.json` and `scripts/` for your needs :)
+Just clone this repository and edit `package.json` for your needs.
 
 ## Features
 
 - Build configuration for a Vue.js component with [Rollup](http://rollupjs.org/)
-- Unit test - [Testem](https://github.com/testem/testem) + [Mocha](https://mochajs.org/) + [power-assert](https://github.com/power-assert-js/power-assert)
+- Unit test - [Jest](https://jestjs.io/ja/)
 
 ## License
 
