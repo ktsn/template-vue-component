@@ -1,4 +1,3 @@
-
 module.exports = {
   entry: {
     app: 'play/app.js',
@@ -10,11 +9,14 @@ module.exports = {
   templateCompiler: true,
   // no code split for 3rd party libraries
   vendor: false,
-  html: [{
-    chunks: ['app'],
-    filename: 'index.html'
-  }, {
-    chunks: ['preview'],
-    filename: 'preview.html'
-  }]
+  html: [
+    {
+      chunks: ['app'],
+      filename: 'index.html'
+    },
+    {
+      chunks: ['preview'],
+      filename: 'preview.html'
+    }
+  ]
 }
