@@ -38,7 +38,7 @@ export default Vue.extend({
 </script>
 
 <style>
-.conter,
+.counter,
 .counter-value,
 .counter-controls {
   display: inline-block;
