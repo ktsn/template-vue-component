@@ -16,33 +16,32 @@ function capitalize(name) {
 
 module.exports = {
   input: 'src/index.ts',
-  name: pkg.name,
+  output: {
+    fileName: `${pkg.name}.[format][min][ext]`,
+    format: ['cjs', 'es', 'umd', 'umd-min'],
+    moduleName: capitalize(pkg.name)
+  },
 
   banner,
-  format: ['cjs', 'es', 'umd', 'umd-min'],
-  exports: 'named',
-  moduleName: capitalize(pkg.name),
 
-  global: {
+  globals: {
     vue: 'Vue'
   },
-  external: ['vue'],
+  externals: ['vue'],
 
-  plugin: ['vue', 'css-only'],
+  plugins: {
+    vue: {
+      css: false
+    },
 
-  // Plugin options
+    typescript2: {
+      tsconfig: './tsconfig.main.json',
+      clean: true,
+      typescript: require('typescript')
+    },
 
-  vue: {
-    css: false
-  },
-
-  typescript2: {
-    tsconfig: './tsconfig.main.json',
-    clean: true,
-    typescript: require('typescript')
-  },
-
-  'css-only': {
-    output: 'dist/' + pkg.name + '.css'
+    'css-only': {
+      output: 'dist/' + pkg.name + '.css'
+    }
   }
 }

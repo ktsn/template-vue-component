@@ -10,6 +10,7 @@
   ],
   "license": "MIT",
   "main": "dist/template-vue-component.cjs.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -33,23 +34,28 @@
     "release": "npm run test && npm run clean && npm run build"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.0",
+    "@babel/core": "^7.5.5",
+    "@types/jest": "^24.0.18",
     "@vue/test-utils": "^1.0.0-beta.20",
-    "bili": "^3.1.2",
-    "eslint": "^5.1.0",
-    "eslint-config-ktsn-vue": "^1.0.1",
-    "jest": "^23.4.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "bili": "^4.8.1",
+    "eslint": "^6.2.1",
+    "eslint-config-ktsn-vue": "^2.0.0",
+    "jest": "^24.9.0",
     "poi": "^10.2.9",
-    "prettier": "1.14.0",
+    "postcss": "^7.0.17",
+    "prettier": "1.18.2",
     "prettier-config-ktsn": "^1.0.0",
-    "rollup-plugin-css-only": "^0.4.0",
-    "rollup-plugin-typescript2": "^0.16.1",
-    "rollup-plugin-vue": "^4.3.1",
-    "ts-jest": "^23.0.1",
-    "ts-loader": "^4.4.2",
-    "typescript": "^2.9.2",
-    "vue": "^2.5.16",
-    "vue-jest": "^2.6.0",
-    "vue-play": "^3.2.1"
+    "rollup": "^1.20.1",
+    "rollup-plugin-css-only": "^1.0.0",
+    "rollup-plugin-typescript2": "^0.23.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "vue": "^2.6.10",
+    "vue-jest": "^3.0.4",
+    "vue-play": "^3.2.1",
+    "vue-template-compiler": "^2.6.10"
   }
 }

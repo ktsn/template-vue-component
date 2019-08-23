@@ -1,22 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",
     "module": "es2015",
     "moduleResolution": "node",
-    "lib": [
-      "es2015",
-      "dom"
-    ],
+    "lib": ["es2015", "dom"],
     "strict": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.vue",
-    "test/**/*.ts",
-    "test/**/*.vue"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.vue", "test/**/*.ts", "test/**/*.vue"]
 }
